@@ -17,8 +17,4 @@ body {
     .tracker {
         @apply bg-gray-600 flex-none w-1/6
     }
-
-    .grid-container {
-      @apply grid
-    }
   }
