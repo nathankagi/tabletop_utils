@@ -24,7 +24,7 @@ let TrackerMenuBar = () => {
 
 // Ordered list of components
 let CardTracker = () => {
-  return <></>;
+  return <>LIST</>;
 };
 
 export default Tracker;
