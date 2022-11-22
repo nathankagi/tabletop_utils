@@ -2,7 +2,10 @@ import { FiMenu } from "react-icons/fi";
 
 const Card = ({ name = "Name", ...props }) => {
   return (
-    <div className="card">
+    <div
+      className="h-auto max-h-36 w-72 m-4 p-2 shadow-lg bg-white text-slate-800
+    rounded-lg transition-all duration-300 ease-in;"
+    >
       <div className="flex flex-row m-2">
         <input className="grow mx-4" defaultValue={name}></input>
         <div

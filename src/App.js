@@ -10,28 +10,22 @@ function App() {
 
   return (
     <Fragment>
-      <div className="container">
-        <div className="flex w-screen h-screen">
-          <Tracker></Tracker>
-          <div className="flex flex-row">
-            <div className="h-screen w-10">
-              <div
-                className="flex items-center justify-center h-8 w-8 m-2 shadow-lg bg-white text-slate-800 hover:bg-slate-800 hover:text-white
+      <div className="flex flex-row">
+        <Tracker></Tracker>
+        <div
+          className="flex flex-none items-center justify-center h-8 w-8 m-2 shadow-lg bg-white text-slate-800 hover:bg-slate-800 hover:text-white
           rounded-3xl transition-all duration-300 ease-in"
-                onClick={() => {
-                  return console.log("add card");
-                }}
-              >
-                {<FiPlusCircle size={22}></FiPlusCircle>}
-              </div>
-            </div>
-            <div className="flex flex-wrap m-2 p-2">
-              <Card name="test"></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-            </div>
-          </div>
+          onClick={() => {
+            setCards([...cards, 1]);
+            console.log(cards);
+          }}
+        >
+          {<FiPlusCircle size={22}></FiPlusCircle>}
+        </div>
+        <div className="flex flex-wrap" style={{ height: "fit-content" }}>
+          {cards.map((id) => (
+            <Card id={id}></Card>
+          ))}
         </div>
       </div>
     </Fragment>

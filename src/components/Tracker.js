@@ -3,6 +3,7 @@ function Tracker({ props }) {
     <div className="tracker">
       <ActiveCard></ActiveCard>
       <TrackerMenuBar></TrackerMenuBar>
+      <CardTracker></CardTracker>
     </div>
   );
 }
@@ -12,7 +13,7 @@ let ActiveCard = ({ props }) => {
   return <>ACTIVE COMPONENT</>;
 };
 
-// menu for controlling tracker
+// Menu for controlling tracker
 let TrackerMenuBar = () => {
   return (
     <>
